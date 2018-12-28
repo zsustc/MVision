@@ -79,6 +79,8 @@
       A一般假设为 90°，是指摄像头坐标系的偏斜度（就是镜头坐标和CCD是否垂直）。
     * 摄像头矩阵（内参）的目的是把图像的点从图像坐标转换成实际物理的三维坐标。因此其中的fx,y, cx, cy 都是使用类似上面的纲量。
     * 同样，Q 中的变量 f，cx, cy 也应该是一样的。
+    
+    关于相机内参求解，正确的应该是：fx = f /dx; fy = f/dy;
 
         参考代码　
         https://github.com/yuhuazou/StereoVision/blob/master/StereoVision/StereoMatch.cpp
